@@ -51,6 +51,15 @@ nav, .row {
     height: auto;
     width: 100%;
     text-align: center;
+    padding: 3px;
+}
+.black-bg {
+    background: black;
+    color: white;
+}
+.white-bg {
+    background: white;
+    color: black;
 }
 .hover-text {
     color: black;
@@ -84,7 +93,7 @@ nav, .row {
         color: teal;
     }
     60% {
-        color: lightblue;
+        color: rgb(37, 78, 168);
     }
     70% {
         color: blue;
@@ -98,4 +107,18 @@ nav, .row {
     100% {
         color: darkmagenta;
     }
+}
+.rounded-corners {
+    border-radius: 25px;
+}
+.shadow {
+    /* box shadow generator: https://www.cssmatic.com/box-shadow */
+    -webkit-box-shadow: 20px 20px 18px -4px rgba(40,40,214,0.84);
+    -moz-box-shadow: 20px 20px 18px -4px rgba(40,40,214,0.84);
+    box-shadow: 20px 20px 18px -4px rgba(40,40,214,0.84);
+}
+.profile-image {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
 }
