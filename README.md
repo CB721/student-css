@@ -1,1 +1,1 @@
-# student-css
+A demonstation of basic-level CSS styling tools.

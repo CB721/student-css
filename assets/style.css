@@ -1,3 +1,7 @@
+* {
+    padding: 0;
+    margin: 0;
+}
 body {
     /* linear gradient generator: https://cssgradient.io/ */
     background: rgb(249,62,0);
@@ -11,7 +15,7 @@ body {
 }
 nav {
     height: 100px;
-    background: rgb(106, 0, 255);
+    background: rgb(77, 3, 181);
     width: 100%;
 }
 nav, .row {
@@ -22,17 +26,18 @@ nav, .row {
 .nav-child {
     width: 33.33%;
     height: 100%;
-    border: 3px solid rgba(0, 0, 0, 0.461);
+    padding-top: 55px;
+    /* border: 3px solid rgba(0, 0, 0, 0.461); */
     text-align: center;
     color: white;
 }
 .container {
-    width: 100%;
+    width: 100vw;
 }
 .row {
-    width: 100%;
+    width: 100vw;
     height: auto;
-    border: 3px solid rgba(97, 44, 44, 0.461);
+    /* border: 3px solid rgb(255, 0, 255); */
     vertical-align: top;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -40,18 +45,21 @@ nav, .row {
 .col-size-6 {
     width: 50%;
     height: auto;
-    border: 3px solid rgba(0, 0, 0, 0.461);
+    border: 3px solid rgb(234, 0, 255);
 }
 .col-size-4 {
     width: 33.33%;
     height: auto;
-    border: 3px solid rgba(0, 0, 0, 0.461);
+    border: 3px solid rgb(255, 0, 191);
+}
+.col-size-12 {
+    width: 100%;
+    height: auto;
 }
 .content {
     height: auto;
     width: 100%;
     text-align: center;
-    padding: 3px;
 }
 .black-bg {
     background: black;
@@ -66,9 +74,13 @@ nav, .row {
 }
 .hover-text:hover {
     color: white;
+    background: black;
 }
 .uppercase {
     text-transform: uppercase;
+}
+.uppercase:hover {
+    transform: scale(1.05);
 }
 .animate {
     animation: rainbow-text 5s linear infinite;
@@ -121,4 +133,48 @@ nav, .row {
     height: 150px;
     width: 150px;
     border-radius: 50%;
+    z-index: 3;
+    animation: grow 3s linear infinite;
+}
+@keyframes grow {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.box {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.rel-boxes {
+    /* position: relative; */
+    height: 100px;
+    padding: 20px;
+    border: 3px solid rgb(234, 0, 255);
+}
+.abs-boxes {
+    position: absolute;
+    bottom: 0;
+    width: 150px;
+    height: 20px;
+    padding: 20px;
+    border: 3px solid rgb(234, 0, 255);
+}
+.bottom {
+    bottom: 0;
+}
+.top {
+    top: 0;
+}
+.left {
+    left: 0;
+}
+.right {
+    right: 0;
 }
